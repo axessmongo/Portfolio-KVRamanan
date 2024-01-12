@@ -141,7 +141,7 @@ function Home() {
         <div className='text-center py-4 my-4' data-aos="fade-up-right" data-aos-duration="600">
 
           <h3 className='text-center mb-3 heading6 fs-2 fw-bold mt-3 ' style={{ color: "#fd562a" }}>Career Objective</h3>
-          <p className='pt-2 mt-1 heading4'> An experienced Professional in Functional, Non-Functional, Globalization, UI Testing, API Testing,
+          <p className='pt-2 mt-1 heading5'>An experienced Professional in Functional, Non-Functional, Globalization, UI Testing, API Testing,
             API Testing, and Automation Testing (Selenium Web driver with JAVA), wants to be associated with a
             progressive organization that can provide me with a dynamic work sphere, challenging assignments with
             responsibility that encourage creativity, and keeps in touch with the latest technologies/ trends in
