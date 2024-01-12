@@ -4,7 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Josefin+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Josefin+Sans&family=Raleway:ital,wght@1,300&display=swap');
 
-/* sara start */
 * {
   margin: 0;
   padding: 0;
@@ -98,7 +97,6 @@
   position: relative;
   display: inline-block;
   line-height: 1;
-  /* font-size: 24px; */
   text-transform: uppercase;
   margin-bottom: 0;
   margin-left: 30px;
@@ -201,11 +199,6 @@
   cursor: pointer;
 }
 
-
-/* sara end css */
-
-
-/* jagan css start  */
 .details-bg {
   background-image: url('./Assets/Images/bg-img-ram.jpg');
   background-position: center;
@@ -246,22 +239,13 @@
   color: #fff !important;
 }
 
-/* jagan css end */
-
-
-/* lav css start */
-
 .card.custom-card2 {
   border: none;
-
 }
-
 .custom-card2 {
   transition: transform 0.3s, box-shadow 0.3s;
   margin-bottom: 20px;
 }
-
-
 .card-li li {
   padding-top: 12px;
   font-family: 'Roboto', sans-serif;
@@ -273,11 +257,7 @@
   box-shadow: 0 0 20px rgb(253 86 42)
 }
 
-/* lav css end */
 
-
-
-/* diwa.css */
 .nav-banner {
   background-image: url('./Assets/Images/bg-img-ram.jpg');
   background-repeat: no-repeat;
@@ -377,9 +357,6 @@
 }
 
 .user .card-description {
-  /* background: linear-gradient(145deg, #e2e8ec, #ffffff); */
-  /* box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff; */
-  /* background: rgb(253,86,42); */
   background: linear-gradient(90deg, rgba(253,86,42,1) 0%, rgba(235,139,87,1) 100%);
 }
 
@@ -389,12 +366,6 @@
 
   width: 100%;
 }
-
-/* .user .title-area {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} */
 
 .user .title-info {
   text-align: left;
@@ -473,5 +444,3 @@
   top: 0%;
   z-index: 98765;
 }
-
-/* diwa css end */

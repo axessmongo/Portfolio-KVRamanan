@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Ramanan from '../Assets/Images/ramananimg.jpg'
 import Instaicon from '../Assets/Images/instaicon.png'
 import Linkedin from '../Assets/Images/linkedin-icon.png'
 import tool from '../Assets/Images/icons8-toolbox-64.png'
@@ -15,11 +14,9 @@ import card2 from '../Assets/Images/card2img.png'
 import card3 from '../Assets/Images/card3img.png'
 import Locationicon from '../Assets/Images/icons8-location-48.png'
 import experience from '../Assets/Images/experience.png'
-import navlogo from '../Assets/Images/navimg.png'
 import Kalyanan from '../Assets/Images/Kalyanan.jpg'
 import Tech from '../Assets/Images/Tech.jpg'
 import profile1 from '../Assets/Images/profile1.png'
-import profile2 from '../Assets/Images/profile-2.png'
 import phoneicon from '../Assets/Images/icons8-phone-64.png'
 import mailicon from '../Assets/Images/icons8-email-64.png'
 import kvram from '../Assets/Images/kvram.png'
@@ -34,7 +31,6 @@ function Home() {
       var navHeight = navbarElement.clientHeight;
       // Use navHeight as needed
     }
-    console.log(element)
     if (element) {
       const topPosition = element.getBoundingClientRect().top + window.scrollY;
       window.scrollTo({ top: topPosition - navHeight, behavior: 'smooth' });
@@ -48,54 +44,54 @@ function Home() {
 
       {/* Nav-Start */}
       <section className='nav-banner' id='home' >
-        <nav class="navbar navbar-expand-lg" id='home-nav' data-aos="fade-right" data-aos-duration="600" style={{ backgroundColor: '#060525' }}>
-          <div class="container-fluid">
-            <Link class="navbar-brand" onClick={() => gotoTop('home')}>
+        <nav className="navbar navbar-expand-lg" id='home-nav' data-aos="fade-right" data-aos-duration="600" style={{ backgroundColor: '#060525' }}>
+          <div className="container-fluid">
+            <Link className="navbar-brand" onClick={() => gotoTop('home')}>
               <img src={kvram2} className='kvrlogo' alt=" navlogo" />
             </Link>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto mb-3 p-4 mb-lg-0 text-center ">
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul className="navbar-nav ms-auto mb-3 p-4 mb-lg-0 text-center ">
 
-                <li class="nav-item heading6">
-                  <a class="nav-link active px-3" aria-current="page" id='name-nav' onClick={() => gotoTop('home')}>Home</a>
+                <li className="nav-item heading6">
+                  <a className="nav-link active px-3" aria-current="page" id='name-nav' onClick={() => gotoTop('home')}>Home</a>
                 </li>
 
-                <li class="nav-item heading6">
-                  <a class="nav-link active px-3 " aria-current="page" id='name-nav' onClick={() => gotoTop('aboutus')} >About Us</a>
+                <li className="nav-item heading6">
+                  <a className="nav-link active px-3 " aria-current="page" id='name-nav' onClick={() => gotoTop('aboutus')} >About Us</a>
                 </li>
-                <li class="nav-item heading6">
-                  <a class="nav-link active px-3" aria-current="page" id='name-nav' onClick={() => gotoTop('portfolio')}>Portfolio</a>
-                </li>
-
-                <li class="nav-item heading6">
-                  <a class="nav-link active px-3" aria-current="page" id='name-nav' onClick={() => gotoTop('technical')} >Technical</a>
+                <li className="nav-item heading6">
+                  <a className="nav-link active px-3" aria-current="page" id='name-nav' onClick={() => gotoTop('portfolio')}>Portfolio</a>
                 </li>
 
-
-                <li class="nav-item heading6">
-                  <a class="nav-link active px-3" aria-current="page" id='name-nav' onClick={() => gotoTop('work')}>Work</a>
+                <li className="nav-item heading6">
+                  <a className="nav-link active px-3" aria-current="page" id='name-nav' onClick={() => gotoTop('technical')} >Technical</a>
                 </li>
 
-                <li class="nav-item heading6">
-                  <a class="nav-link active px-3" aria-current="page" id='name-nav' onClick={() => gotoTop('testimonial')}>Testimonial</a>
+
+                <li className="nav-item heading6">
+                  <a className="nav-link active px-3" aria-current="page" id='name-nav' onClick={() => gotoTop('work')}>Work</a>
                 </li>
 
-                <li class="nav-item border-end heading6">
-                  <a class="nav-link active px-3" aria-current="page" id='name-nav' onClick={() => gotoTop('contact')} >Contact</a>
+                <li className="nav-item heading6">
+                  <a className="nav-link active px-3" aria-current="page" id='name-nav' onClick={() => gotoTop('testimonial')}>Testimonial</a>
+                </li>
+
+                <li className="nav-item border-end heading6">
+                  <a className="nav-link active px-3" aria-current="page" id='name-nav' onClick={() => gotoTop('contact')} >Contact</a>
                 </li>
 
                 <a href='https://www.instagram.com/kalyana_venkata_ramanan/' target="_blank">
-                  <li class="nav-item px-2 pt-1">
-                    {/* <a class="nav-link active px-3" aria-current="page" id='name-nav' href="#">oii</a> */}
+                  <li className="nav-item px-2 pt-1">
+                    {/* <a className="nav-link active px-3" aria-current="page" id='name-nav' href="#">oii</a> */}
                     <img src={Instaicon} alt="" className='head-icon' />
                   </li>
                 </a>
                 <a href='https://www.linkedin.com/in/kalyan-durai-664390274/' target="_blank">
-                  <li class="nav-item pt-1">
-                    {/* <a class="nav-link active px-3" aria-current="page" id='name-nav' href="#">oii</a> */}
+                  <li className="nav-item pt-1">
+                    {/* <a className="nav-link active px-3" aria-current="page" id='name-nav' href="#">oii</a> */}
                     <img src={Linkedin} alt="img-fluid" className='head-icon' />
                   </li>
                 </a>
@@ -115,7 +111,7 @@ function Home() {
 
                 <h5 className='text-light heading9 fw-bold fs-5'>Hello, I'm</h5>
                 <h1 className='text-light banner-head heading9'>Kalyana <span style={{ color: '#fd562a' }} > Venkata</span> Ramanan</h1>
-                <h5 className='text-light heading9 fw-bold fs-5'>A passionate Full Stack Engineer from Bangalore!</h5>
+                <h5 className='text-light heading9 fw-bold fs-5'>A passionate Full Stack Engineer from Chennai !</h5>
                 <div className='py-4 my-4'>
                   <button className='banner-bts fw-bold fs-5 heading5' onClick={() => window.open('https://wa.me/9092570489', '_blank')} target="_blank">
                     Contact Me on WhatsApp
@@ -162,7 +158,7 @@ function Home() {
           <div className='technical-skills mt-2'>
             <div className='container my-5 py-5'>
 
-              <div class="tf-heading tf-heading-style-02 mb-5 text-center ">
+              <div className="tf-heading tf-heading-style-02 mb-5 text-center ">
                 <h3 className='text-center heading6 fs-2 fw-bold pt-5 my-3' style={{ color: "#fd562a" }}>Technical Skills</h3>
               </div>
               <div className='row text-center g-3'>
@@ -344,7 +340,7 @@ function Home() {
         <div className='technical-skills'>
           <div className='container'>
 
-            <div class=" mb-5 text-center">
+            <div className=" mb-5 text-center">
               <h3 className='text-center mb-3 heading6 fs-2 fw-bold mt-3 ' data-aos="fade-up" data-aos-duration="800" style={{ color: "#fd562a" }}>WORK PROJECTS</h3>
 
             </div>
@@ -536,12 +532,12 @@ function Home() {
       <section className='nav-banner' id="testimonial">
         <div>
           <div
-            class="elementor-widget-container"
+            className="elementor-widget-container"
 
             style={{ margin: "2rem" }}
           >
             <div
-              class="section-title text-center aos-init aos-animate"
+              className="section-title text-center aos-init aos-animate"
               data-aos="fade-up"
               data-aos-duration="500"
               data-aos-delay="100"
@@ -550,7 +546,7 @@ function Home() {
               <h3 className='text-center heading6 fs-2 fw-bold pt-5 my-3 ' data-aos="fade-up" data-aos-duration="800" style={{ color: "#fd562a" }}>Testimonial</h3>
 
               <span
-                class="subtitle sub-title text-light heading5"
+                className="subtitle sub-title text-light heading5"
                 style={{ fontFamily: '"Montserrat", sans-serif' }} data-aos="fade-right" data-aos-duration="800"
               >
                 What happy clients say about us ?
@@ -559,9 +555,9 @@ function Home() {
           </div>
           <div className="">
             <div className="carousel ">
-              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                <div class="carousel-inner container">
-                  <div class="carousel-item active" data-bs-interval="3000">
+              <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="true">
+                <div className="carousel-inner container">
+                  <div className="carousel-item active" data-bs-interval="3000">
                     <div className="row p-3">
                       <div className="col-md-4 mb-5">
 
@@ -577,23 +573,23 @@ function Home() {
                       </div>
                       <div className="col-md-8" data-aos="zoom-in" data-aos-duration="600">
                         <div className="user">
-                          <div class="card-description " >
-                            <div class="title-area">
-                              <div class="title-info">
-                                <h3 class="title heading9">Alfred James</h3>
-                                <span class="date"> </span>
+                          <div className="card-description " >
+                            <div className="title-area">
+                              <div className="title-info">
+                                <h3 className="title heading9">Alfred James</h3>
+                                <span className="date"> </span>
                               </div>
 
-                              <div class="rating">
+                              <div className="rating">
                                 <ul className="p-0 mx-auto my-0">
-                                  <li class="has-rating list-inline-item">
-                                    <i class="star-icon">
+                                  <li className="has-rating list-inline-item">
+                                    <i className="star-icon">
                                       <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="16"
                                         height="16"
                                         fill="currentColor"
-                                        class="bi bi-star-fill"
+                                        className="bi bi-star-fill"
                                         viewBox="0 0 16 16"
                                       >
                                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
@@ -601,14 +597,14 @@ function Home() {
                                     </i>
                                   </li>
 
-                                  <li class="has-rating list-inline-item">
-                                    <i class="star-icon">
+                                  <li className="has-rating list-inline-item">
+                                    <i className="star-icon">
                                       <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="16"
                                         height="16"
                                         fill="currentColor"
-                                        class="bi bi-star-fill"
+                                        className="bi bi-star-fill"
                                         viewBox="0 0 16 16"
                                       >
                                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
@@ -616,14 +612,14 @@ function Home() {
                                     </i>
                                   </li>
 
-                                  <li class="has-rating list-inline-item">
-                                    <i class="star-icon">
+                                  <li className="has-rating list-inline-item">
+                                    <i className="star-icon">
                                       <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="16"
                                         height="16"
                                         fill="currentColor"
-                                        class="bi bi-star-fill"
+                                        className="bi bi-star-fill"
                                         viewBox="0 0 16 16"
                                       >
                                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
@@ -631,14 +627,14 @@ function Home() {
                                     </i>
                                   </li>
 
-                                  <li class="has-rating list-inline-item">
-                                    <i class="star-icon">
+                                  <li className="has-rating list-inline-item">
+                                    <i className="star-icon">
                                       <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="16"
                                         height="16"
                                         fill="currentColor"
-                                        class="bi bi-star-fill"
+                                        className="bi bi-star-fill"
                                         viewBox="0 0 16 16"
                                       >
                                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
@@ -646,14 +642,14 @@ function Home() {
                                     </i>
                                   </li>
 
-                                  <li class="has-rating list-inline-item">
-                                    <i class="star-icon">
+                                  <li className="has-rating list-inline-item">
+                                    <i className="star-icon">
                                       <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="16"
                                         height="16"
                                         fill="currentColor"
-                                        class="bi bi-star-fill"
+                                        className="bi bi-star-fill"
                                         viewBox="0 0 16 16"
                                       >
                                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
@@ -664,8 +660,8 @@ function Home() {
                               </div>
                             </div>
                             <div className="my-3 border"></div>
-                            <div class="seperator"></div>
-                            <p class="description heading5">Highly recommended. Respectful, polite, great communication,
+                            <div className="seperator"></div>
+                            <p className="description heading5">Highly recommended. Respectful, polite, great communication,
                               understood our needs, and delivered more than what was expected.
                               There really is no need to look further than Kalyan and his team.
                               They added a lot more value with their insights and suggestions while
@@ -675,7 +671,7 @@ function Home() {
                       </div>
                     </div>
                   </div>
-                  <div class="carousel-item" data-bs-interval="3000">
+                  <div className="carousel-item" data-bs-interval="3000">
                     <div className="row p-3">
                       <div className="col-md-4 mb-5">
                         <div className='text-center pt-3 mt-3' data-aos="zoom-in" data-aos-duration="600">
@@ -690,23 +686,23 @@ function Home() {
                       </div>
                       <div className="col-md-8" data-aos="zoom-in" data-aos-duration="600">
                         <div className="user">
-                          <div class="card-description ">
-                            <div class="title-area">
-                              <div class="title-info">
-                                <h3 class="title heading9">Adam Jones</h3>
-                                <span class="date"> </span>
+                          <div className="card-description ">
+                            <div className="title-area">
+                              <div className="title-info">
+                                <h3 className="title heading9">Adam Jones</h3>
+                                <span className="date"> </span>
                               </div>
 
-                              <div class="rating">
+                              <div className="rating">
                                 <ul className="p-0 mx-auto my-0">
-                                  <li class="has-rating list-inline-item">
-                                    <i class="star-icon">
+                                  <li className="has-rating list-inline-item">
+                                    <i className="star-icon">
                                       <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="16"
                                         height="16"
                                         fill="currentColor"
-                                        class="bi bi-star-fill"
+                                        className="bi bi-star-fill"
                                         viewBox="0 0 16 16"
                                       >
                                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
@@ -714,14 +710,14 @@ function Home() {
                                     </i>
                                   </li>
 
-                                  <li class="has-rating list-inline-item">
-                                    <i class="star-icon">
+                                  <li className="has-rating list-inline-item">
+                                    <i className="star-icon">
                                       <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="16"
                                         height="16"
                                         fill="currentColor"
-                                        class="bi bi-star-fill"
+                                        className="bi bi-star-fill"
                                         viewBox="0 0 16 16"
                                       >
                                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
@@ -729,14 +725,14 @@ function Home() {
                                     </i>
                                   </li>
 
-                                  <li class="has-rating list-inline-item">
-                                    <i class="star-icon">
+                                  <li className="has-rating list-inline-item">
+                                    <i className="star-icon">
                                       <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="16"
                                         height="16"
                                         fill="currentColor"
-                                        class="bi bi-star-fill"
+                                        className="bi bi-star-fill"
                                         viewBox="0 0 16 16"
                                       >
                                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
@@ -744,14 +740,14 @@ function Home() {
                                     </i>
                                   </li>
 
-                                  <li class="has-rating list-inline-item">
-                                    <i class="star-icon">
+                                  <li className="has-rating list-inline-item">
+                                    <i className="star-icon">
                                       <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="16"
                                         height="16"
                                         fill="currentColor"
-                                        class="bi bi-star-fill"
+                                        className="bi bi-star-fill"
                                         viewBox="0 0 16 16"
                                       >
                                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
@@ -759,14 +755,14 @@ function Home() {
                                     </i>
                                   </li>
 
-                                  <li class="has-rating list-inline-item">
-                                    <i class="star-icon">
+                                  <li className="has-rating list-inline-item">
+                                    <i className="star-icon">
                                       <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="16"
                                         height="16"
                                         fill="currentColor"
-                                        class="bi bi-star-fill"
+                                        className="bi bi-star-fill"
                                         viewBox="0 0 16 16"
                                       >
                                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
@@ -777,8 +773,8 @@ function Home() {
                               </div>
                             </div>
                             <div className="my-3 border"></div>
-                            <div class="seperator"></div>
-                            <p class="description heading5">Kalyan’s understanding and execution are outstanding. He delivered
+                            <div className="seperator"></div>
+                            <p className="description heading5">Kalyan’s understanding and execution are outstanding. He delivered
                               exceptional work on time and is always willing to go the customer satisfaction. His attention to detail is impressive,
                               and he consistently exceeds expectations. I highly recommend Kalyan to
                               anyone in need of a reliable, professional, and dedicated professional.{" "}</p>
@@ -787,7 +783,7 @@ function Home() {
                       </div>
                     </div>
                   </div>
-                  <div class="carousel-item" data-bs-interval="3000">
+                  <div className="carousel-item" data-bs-interval="3000">
                     <div className="row p-3">
                       <div className="col-md-4 mb-5">
                         <div className='text-center pt-3 mt-3' data-aos="zoom-in" data-aos-duration="600">
@@ -802,23 +798,23 @@ function Home() {
                       </div>
                       <div className="col-md-8" data-aos="zoom-in" data-aos-duration="600">
                         <div className="user">
-                          <div class="card-description ">
-                            <div class="title-area">
-                              <div class="title-info">
-                                <h3 class="title heading9"> Mega</h3>
-                                <span class="date"> </span>
+                          <div className="card-description ">
+                            <div className="title-area">
+                              <div className="title-info">
+                                <h3 className="title heading9"> Mega</h3>
+                                <span className="date"> </span>
                               </div>
 
-                              <div class="rating">
+                              <div className="rating">
                                 <ul className="p-0 mx-auto my-0">
-                                  <li class="has-rating list-inline-item">
-                                    <i class="star-icon">
+                                  <li className="has-rating list-inline-item">
+                                    <i className="star-icon">
                                       <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="16"
                                         height="16"
                                         fill="currentColor"
-                                        class="bi bi-star-fill"
+                                        className="bi bi-star-fill"
                                         viewBox="0 0 16 16"
                                       >
                                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
@@ -826,14 +822,14 @@ function Home() {
                                     </i>
                                   </li>
 
-                                  <li class="has-rating list-inline-item">
-                                    <i class="star-icon">
+                                  <li className="has-rating list-inline-item">
+                                    <i className="star-icon">
                                       <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="16"
                                         height="16"
                                         fill="currentColor"
-                                        class="bi bi-star-fill"
+                                        className="bi bi-star-fill"
                                         viewBox="0 0 16 16"
                                       >
                                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
@@ -841,14 +837,14 @@ function Home() {
                                     </i>
                                   </li>
 
-                                  <li class="has-rating list-inline-item">
-                                    <i class="star-icon">
+                                  <li className="has-rating list-inline-item">
+                                    <i className="star-icon">
                                       <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="16"
                                         height="16"
                                         fill="currentColor"
-                                        class="bi bi-star-fill"
+                                        className="bi bi-star-fill"
                                         viewBox="0 0 16 16"
                                       >
                                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
@@ -856,14 +852,14 @@ function Home() {
                                     </i>
                                   </li>
 
-                                  <li class="has-rating list-inline-item">
-                                    <i class="star-icon">
+                                  <li className="has-rating list-inline-item">
+                                    <i className="star-icon">
                                       <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="16"
                                         height="16"
                                         fill="currentColor"
-                                        class="bi bi-star-fill"
+                                        className="bi bi-star-fill"
                                         viewBox="0 0 16 16"
                                       >
                                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
@@ -871,14 +867,14 @@ function Home() {
                                     </i>
                                   </li>
 
-                                  <li class="has-rating list-inline-item">
-                                    <i class="star-icon">
+                                  <li className="has-rating list-inline-item">
+                                    <i className="star-icon">
                                       <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="16"
                                         height="16"
                                         fill="currentColor"
-                                        class="bi bi-star-fill"
+                                        className="bi bi-star-fill"
                                         viewBox="0 0 16 16"
                                       >
                                         <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
@@ -889,8 +885,8 @@ function Home() {
                               </div>
                             </div>
                             <div className="my-3 border"></div>
-                            <div class="seperator"></div>
-                            <p class="description heading5">Kalyan is exceptional! His attention to detail, problem-solving
+                            <div className="seperator"></div>
+                            <p className="description heading5">Kalyan is exceptional! His attention to detail, problem-solving
                               skills, and dedication to the project have been invaluable. The
                               high-quality code he and his team deliver is not only functional
                               but also efficient and easy to maintain. Thank you for your hard
@@ -903,28 +899,28 @@ function Home() {
                 </div>
 
                 <button
-                  class="carousel-control-prev"
+                  className="carousel-control-prev"
                   type="button"
                   data-bs-target="#carouselExampleIndicators"
                   data-bs-slide="prev"
                 >
                   <span
-                    class="carousel-control-prev-icon"
+                    className="carousel-control-prev-icon"
                     aria-hidden="true"
                   ></span>
-                  <span class="visually-hidden">Previous</span>
+                  <span className="visually-hidden">Previous</span>
                 </button>
                 <button
-                  class="carousel-control-next"
+                  className="carousel-control-next"
                   type="button"
                   data-bs-target="#carouselExampleIndicators"
                   data-bs-slide="next"
                 >
                   <span
-                    class="carousel-control-next-icon"
+                    className="carousel-control-next-icon"
                     aria-hidden="true"
                   ></span>
-                  <span class="visually-hidden">Next</span>
+                  <span className="visually-hidden">Next</span>
                 </button>
               </div>
 
@@ -951,7 +947,7 @@ function Home() {
                   </div>
                   <div>
                     <h3 className='heading7 fw-bold'>Address</h3>
-                    <p className='heading6'>349-350 KA, Sreenivasa Nagar, Vallalkaari Street, Madipakkam, Kancheepuram.</p>
+                    <p className='heading6'>349-350 KA, Sreenivasa Nagar, Vallalkaari Street, Madipakkam, Chennai.</p>
                     <div className='btn1 pt-1 heading5 text-center text-lg-start'>
                       <a className='btn btn-primary px-4 py-2' href='https://maps.app.goo.gl/1SwzHfrC71xg3Equ9' target="_blank">Location</a>
                     </div>
