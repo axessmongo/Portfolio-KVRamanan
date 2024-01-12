@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+   .card.custom-card2 {
+    border: none;
+    /* box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff; */
+  }
+  
+  .custom-card2:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 165, 0, 0.5); 
+  } 
+  /* Card.css */
+
+.custom-card2{
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 20px;
+  }
+  
+  
+  .card-li li {
+    padding-top: 12px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+
+  
