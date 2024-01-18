@@ -941,13 +941,15 @@ function Home() {
             </div>
             <div className='row pt-2' data-aos="zoom-in" data-aos-duration="600">
               <div className='col-lg-5 pt-2'>
-                <div className='d-flex '>
+                <div className='d-flex'>
                   <div className='me-3 pt-1'>
                     <img src={Locationicon} alt="" className='footer-icon' />
                   </div>
-                  <div>
+                  <div className='d-flex h-100 flex-column justify-content-between'>
+                   <div>
                     <h3 className='heading7 fw-bold'>Address</h3>
                     <p className='heading6'>349-350 KA, Sreenivasa Nagar, Vallalkaari Street, Madipakkam, Chennai.</p>
+                    </div>
                     <div className='btn1 pt-1 heading5 text-center text-lg-start'>
                       <a className='btn btn-primary px-4 py-2' href='https://maps.app.goo.gl/1SwzHfrC71xg3Equ9' target="_blank">Location</a>
                     </div>
@@ -955,13 +957,15 @@ function Home() {
                 </div>
               </div>
               <div className='col-lg-3 pt-2'>
-                <div className='d-flex'>
+                <div className='d-flex h-100'>
                   <div className='me-3 pt-1'>
                     <img src={phoneicon} alt="" className='img-fluid footer-icon' />
                   </div>
-                  <div className='w-100'>
+                  <div className='w-100 d-flex flex-column justify-content-between'>
+                    <div>
                     <h3 className='heading7 fw-bold'>Phone</h3>
                     <p className='heading6'>+91 90925 70489</p>
+                    </div>
                     <div className='btn1 pt-1 heading5 text-center text-lg-start'>
                       <a className='btn btn-primary px-4 py-2' href='tel:9092570489'  target="_blank">Contact here</a>
                     </div>
@@ -969,13 +973,15 @@ function Home() {
                 </div>
               </div>
               <div className='col-lg-4 pt-2'>
-                <div className='d-flex'>
+                <div className='d-flex h-100'>
                   <div className='me-3 pt-1'>
                     <img src={mailicon} alt="" className='img-fluid footer-icon' />
                   </div>
-                  <div className='w-100'>
+                  <div className='w-100 d-flex flex-column justify-content-between'>
+                    <div className=''>
                     <h3 className='heading7 fw-bold'>E-Mail</h3>
                     <p className='heading6'>kalyanaramanan66@gmail.com</p>
+                    </div>
                     <div className='btn1 pt-2 heading5 text-center text-lg-start'>
                       <a className='btn btn-primary px-4 py-2' href='mailto:kalyanaramanan66@gmail.com' target="_blank">Go to</a>
                     </div>
