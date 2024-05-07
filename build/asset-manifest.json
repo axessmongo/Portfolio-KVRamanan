@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f11d9391.css",
+    "main.js": "/static/js/main.7a4ffd0d.js",
+    "static/js/787.76669079.chunk.js": "/static/js/787.76669079.chunk.js",
+    "static/media/cardimg.png": "/static/media/cardimg.2c4bd0900b72cfa013b8.png",
+    "static/media/experience.png": "/static/media/experience.7751fe6f83aa2fc61029.png",
+    "static/media/card2img.png": "/static/media/card2img.734cf78cc83191261075.png",
+    "static/media/card3img.png": "/static/media/card3img.11e92099091ed3f10d83.png",
+    "static/media/kvram.png": "/static/media/kvram.18e337d4fae2e96bbc31.png",
+    "static/media/bg-img-ram.jpg": "/static/media/bg-img-ram.c5760904aa8b6e64c3ad.jpg",
+    "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/Kalyanan.jpg": "/static/media/Kalyanan.6528b0a9febda453a8c7.jpg",
+    "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "static/media/Tech.jpg": "/static/media/Tech.d2dad8285772d505b778.jpg",
+    "static/media/profile1.png": "/static/media/profile1.5b0d4a80fcae1181e41b.png",
+    "index.html": "/index.html",
+    "main.f11d9391.css.map": "/static/css/main.f11d9391.css.map",
+    "main.7a4ffd0d.js.map": "/static/js/main.7a4ffd0d.js.map",
+    "787.76669079.chunk.js.map": "/static/js/787.76669079.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f11d9391.css",
+    "static/js/main.7a4ffd0d.js"
+  ]
+}
